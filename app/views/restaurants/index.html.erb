@@ -5,11 +5,11 @@
 <ul class="list-group mb-3">
 <% @restaurants.each do | restaurant | %>
 <li class ="list-group-item">
-<%= link_to restaurant.name, restaurants_path(restaurant) %>
+<%= link_to restaurant.name, restaurant_path(restaurant) %>
 </li>
   <% end %>
 </ul>
-   <%= link_to "Add a new Restaurant", new_restaurant_path, class: 'btn btn-primary' %>rspec -t refactoring.
+   <%= link_to "Add a new Restaurant", new_restaurant_path, class: 'btn btn-primary' %>
 </div>
 </div>
 </div>
